@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Michu</title>
+<style type="text/css">
+</style>
+<link href="https://fonts.googleapis.com/css?family=Imprima&amp;subset=latin-ext" rel="stylesheet">
+<link href="main.css" rel="stylesheet" type="text/css">
+<script type="text/javascript">
+	function changeMonth(newMonth){
+	var elem = document.getElementById('Month');
+	var err = document.getElementById('error');
+	elem.innerHTML = (newMonth);
+	elem.style.borderBottomColor = 'lightgreen';
+	elem.style.color = '#939393';
+	err.innerHTML = ' ';
+	var list = document.getElementById('lista');
+		list.style.display = 'none';
+		if (!e) {
+        var e = window.event;
+    }
+    e.cancelBubble = true; 
+    if (e.stopPropagation) {
+        e.stopPropagation();
+	}
+	}
+	function slideDown(){
+		var list = document.getElementById('lista');
+		list.style.display = 'block';
+        var arrow = document.getElementById('Month');
+        arrow.style.background = 'url(onn.png) no-repeat right'
+		if (!e) {
+        var e = window.event;
+            
+    }
+    e.cancelBubble = true; 
+    if (e.stopPropagation) {
+        e.stopPropagation();
+        arrow.style.background = 'url(on.png) no-repeat right'
+	}
+	
+	}
+	function changeColor(){
+	var elem = document.getElementById('Month');
+	elem.innerHTML = 'Miesiąc';
+	elem.style.borderBottomColor = 'red';
+		var list = document.getElementById('lista');
+		list.style.display = 'none';
+		var err = document.getElementById('error');
+		err.innerHTML = 'Wybierz miesiąc';
+		
+	}
+	</script>
+</head>
+
+<body>
+<div id="main" onClick="changeColor()">
+<div id="Month" onClick="slideDown()"><p>Miesiąc</p>
+</div>
+	<div id = "error"></div>
+		<ul id="lista" onselectstart="return false" onselect="return false" oncopy="return false">
+		<fieldset>
+		<legend onselectstart="return false" onselect="return false" oncopy="return false">Miesiąc</legend>
+			<li class="komorka" onClick="changeMonth('Styczeń')">Styczeń</li>
+			<li class="komorka" onClick="changeMonth('Luty')">Luty</li>
+			<li class="komorka" onClick="changeMonth('Marzec')">Marzec</li>
+			<li class="komorka" onClick="changeMonth('Kwiecień')">Kwiecień</li>
+			<li class="komorka" onClick="changeMonth('Maj')">Maj</li>
+			<li class="komorka" onClick="changeMonth('Czerwiec')">Czerwiec</li>
+			<li class="komorka" onClick="changeMonth('Lipiec')">Lipiec</li>
+			<li class="komorka" onClick="changeMonth('Sierpień')">Sierpień</li>
+			<li class="komorka" onClick="changeMonth('Wrzesień')">Wrzesień</li>
+			<li class="komorka" onClick="changeMonth('Październik')">Październik</li>
+			<li class="komorka" onClick="changeMonth('Listopad')">Listopad</li>
+			<li class="komorka" onClick="changeMonth('Grudzień')">Grudzień</li>
+			</fieldset>
+		</ul>
+	</div>
+</body>
+</html>

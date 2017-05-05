@@ -1,0 +1,69 @@
+@charset "utf-8";
+body{
+	font-family: 'Imprima', sans-serif;
+
+
+}
+
+ul {
+	width: 200px;
+	list-style-type: none;
+	margin: auto;
+	transition: 0.3s;
+     cursor: pointer;
+}
+
+.little {
+	text-align: center;
+	background: transparent;
+	border: none;
+	
+}
+
+.styczen {
+	width:60%;
+}
+
+li{margin-top: 10px;
+   color:#bbb; 
+    
+}
+li:hover {
+     color:black;
+}
+
+#Month {
+	width: 200px;
+	border: 2px solid lightgrey;
+	text-align:left;
+	padding-left: 30px;
+	letter-spacing: 2px;
+	padding: 10px;
+	display: block;
+	margin-left: 20px;
+	margin: auto;
+	border-bottom-color: lightgray;
+    background: url(on.png) no-repeat right;
+    cursor: pointer;
+}
+#lista{
+	display: none;
+	z-index: 2;
+    
+}
+#main{
+	width: 100%;
+	height: 1000px;
+}
+.komorka{
+	display: block;
+}
+#error{
+	width: 200px;
+	font-size: 10px;
+	color:red;
+	text-align:left;
+	display: block;
+	margin: auto
+}
+p{padding: 0px;margin: 0px;}
